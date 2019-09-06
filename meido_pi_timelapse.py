@@ -21,7 +21,7 @@ parser.add_argument("--total_number_of_photos", type=int, default=3000, help="To
 parser.add_argument("--resolution_x", type=int, default=1920, help="pixel resolution of width")
 parser.add_argument("--resolution_y", type=int, default=1080, help="pixel resolution of height")
 parser.add_argument("--rotation", type=int, default=0, help="rotation by degrees")
-
+args = parser.parse_args()
 
 #setup camera
 camera = PiCamera()

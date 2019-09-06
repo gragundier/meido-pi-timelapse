@@ -37,7 +37,7 @@ try:
 	camera.start_preview(fullscreen = True)
 	sleep(2)
 	for photo_count in range(args.total_number_of_photos):
-		camera.capture("{}/capture_{}".format(file_name, photo_count))
+		camera.capture("{}/capture_{}.jpg".format(file_name, photo_count))
 		sleep(args.interval)
 	
 
